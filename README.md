@@ -8,7 +8,7 @@ Install [Xamarin.Android.ImageCropper](https://www.nuget.org/packages/Xamarin.An
 
 Edit AndroidManifest:
 ```xml
-<manifest ...>
+<manifest ... >
 	<!-- Add permissions -->
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.CAMERA" />
