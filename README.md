@@ -8,15 +8,14 @@ Install [Xamarin.Android.ImageCropper](https://www.nuget.org/packages/Xamarin.An
 
 Edit AndroidManifest:
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Xamarin.Android.ImageCropper.App.Xamarin.Android.ImageCropper.App" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-  <!-- Add permissions -->
+<manifest ...>
+	<!-- Add permissions -->
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.CAMERA" />
-	<uses-sdk android:minSdkVersion="16" />
+
 	<application android:label="ImageCropperApp" android:icon="@drawable/ic_launcher">
 		<!-- Declare CropImageActivity theme -->
-    <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat" />
+		<activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat" />
 	</application>
 </manifest>
 ```
